@@ -307,19 +307,6 @@
     wrapper.classList.toggle('open');
   }
 
-  // 사이트 경유 경로 체크
-  if (document.referrer !== "https://yousoo68.github.io/Fhwidna/") {
-    window.location.href = "https://yousoo68.github.io/Fhwidna/";
-  }
-
-  // 도메인 확인
-  if (window.location.hostname !== "yousoo68.github.io") {
-    document.body.innerHTML = "<h1 style='text-align: center; margin-top: 50px; color: var(--primary-color);'>이 페이지는 섹시유수 갤러리를 통해서만 접속할 수 있습니다.</h1>";
-    setTimeout(function() {
-      window.location.href = "https://yousoo68.github.io/Fhwidna/";
-    }, 5000);
-  }
-
   // 경고 모달 표시 조건
   function isOneDayPassed() {
     const saved = localStorage.getItem("warningModalHideUntil");
